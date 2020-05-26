@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head th:replace="_freagment :: head('博客详情')"></head>
+<head th:replace="fragment/fragment :: head('博客详情')"></head>
 <body>
 
 <!--导航-->
-<nav th:replace="_freagment :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
+<nav th:replace="fragment/fragment :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
 
   <!--中间内容-->
   <div id="waypoint" class="m-container-small m-padded-tb-big animated fadeIn">
@@ -568,9 +568,9 @@ h5,h6{font-size:1em;}
   <br>
   <br>
 <!--底部footer-->
-<footer th:replace="_freagment :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+<footer th:replace="fragment/fragment :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
 
-<th:block th:replace="_freagment :: script"></th:block>
+<th:block th:replace="fragment/fragment :: script"></th:block>
 
   <script>
 

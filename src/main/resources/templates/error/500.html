@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="_freagment :: head('500')"></head>
+<head th:replace="fragment/fragment :: head('500')"></head>
 <body>
 <!--导航-->
-<nav th:replace="_freagment :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
+<nav th:replace="fragment/fragment :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
 
 <div class="m-container-small m-padded-tb-massive">
     <div class="ui error message m-padded-tb-massive">
@@ -15,7 +15,7 @@
 </div>
 
 <!--底部footer-->
-<footer th:replace="_freagment :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+<footer th:replace="fragment/fragment :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
 
 </body>
 </html>

@@ -10,6 +10,6 @@ import com.weizujie.pojo.User;
  */
 public interface UserService {
 
-    User checkUser(String username, String password);
+    User login(String username, String password);
 
 }

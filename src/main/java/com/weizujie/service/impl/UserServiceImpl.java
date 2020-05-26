@@ -1,6 +1,6 @@
 package com.weizujie.service.impl;
 
-import com.weizujie.dao.UserRepository;
+import com.weizujie.dao.UserMapper;
 import com.weizujie.pojo.User;
 import com.weizujie.service.UserService;
 import com.weizujie.util.MD5Utils;
@@ -18,10 +18,11 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserMapper userMapper;
 
     @Override
-    public User checkUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, MD5Utils.code(password));
+    public User login(String username, String password) {
+        // 使用 MD5 对密码进行加密
+        return userMapper.login(username, MD5Utils.code(password));
     }
 }

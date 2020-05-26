@@ -16,9 +16,9 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // 判断用户是否登录
-        if (request.getSession().getAttribute("user") == null) {
+        if (request.getSession().getAttribute("loginUser") == null) {
             // 用户未登录，重定向到登录页面
-            response.sendRedirect("/admin");
+            response.sendRedirect("/admin/login");
             return false;
         }
 

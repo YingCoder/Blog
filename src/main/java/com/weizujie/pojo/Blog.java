@@ -2,7 +2,6 @@ package com.weizujie.pojo;
 
 import lombok.Data;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -16,12 +15,8 @@ import java.util.List;
 
 
 @Data
-@Entity
-@Table(name = "t_blog")
 public class Blog {
 
-    @Id
-    @GeneratedValue
     private Long id;
     private String title;
     private String content;
@@ -33,21 +28,13 @@ public class Blog {
     private boolean commentabled;
     private boolean published;
     private boolean recommend;
-    @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
-    @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
 
-    @ManyToOne
     private Type type;
 
-    @ManyToMany(cascade = {CascadeType.PERSIST})
-    private List<Tag> tags = new ArrayList<>();
-
-    @ManyToOne
     private User user;
 
-    @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
 
 }

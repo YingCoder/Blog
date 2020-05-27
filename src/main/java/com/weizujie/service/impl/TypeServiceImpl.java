@@ -30,7 +30,7 @@ public class TypeServiceImpl implements TypeService {
 
     @Override
     public Type getType(Long id) {
-        return null;
+        return typeMapper.getType(id);
     }
 
     @Override
@@ -39,8 +39,8 @@ public class TypeServiceImpl implements TypeService {
     }
 
     @Override
-    public Type updateType(Long id, Type type) {
-        return null;
+    public int updateType(Type type) {
+        return typeMapper.updateType(type);
     }
 
     @Override

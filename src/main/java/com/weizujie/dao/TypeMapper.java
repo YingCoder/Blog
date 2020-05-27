@@ -13,6 +13,8 @@ import java.util.List;
  */
 public interface TypeMapper {
 
+    Type getType(@Param("id") Long id);
+
     List<Type> getAllType();
 
     Type getTypeByName(@Param("name") String name);
@@ -20,6 +22,9 @@ public interface TypeMapper {
     int saveType(Type type);
 
     void deleteType(Long id);
+
+    int updateType(Type type);
+
 
 
 }

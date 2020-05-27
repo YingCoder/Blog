@@ -6,7 +6,11 @@
         insert into t_type values(#{id}, #{name})
     </insert>
 
-    <delete id="deleteType">
+    <update id="updateType" parameterType="com.weizujie.pojo.Type">
+        update t_type set name = #{name} where id = #{id}
+    </update>
+
+    <delete id="deleteType" parameterType="com.weizujie.pojo.Type">
         delete from t_type where id = #{id}
     </delete>
 
@@ -16,5 +20,9 @@
 
     <select id="getTypeByName" resultType="com.weizujie.pojo.Type">
         select * from t_type where name = #{name}
+    </select>
+
+    <select id="getType" resultType="com.weizujie.pojo.Type">
+        select * from t_type where id = #{id}
     </select>
 </mapper>

@@ -2,7 +2,7 @@ package com.weizujie.controller.admin;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.weizujie.pojo.Type;
+import com.weizujie.entity.Type;
 import com.weizujie.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

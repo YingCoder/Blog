@@ -1,11 +1,13 @@
 package com.weizujie.dao;
 
-import com.weizujie.pojo.Type;
+import com.weizujie.entity.Type;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 /**
+ * 分类持久层接口
+ *
  * @Author: weizujie
  * @Date: 2020/5/26
  * @Version: 1.0
@@ -24,7 +26,6 @@ public interface TypeMapper {
     void deleteType(Long id);
 
     int updateType(Type type);
-
 
 
 }

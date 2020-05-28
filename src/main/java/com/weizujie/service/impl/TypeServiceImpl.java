@@ -1,7 +1,7 @@
 package com.weizujie.service.impl;
 
 import com.weizujie.dao.TypeMapper;
-import com.weizujie.pojo.Type;
+import com.weizujie.entity.Type;
 import com.weizujie.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @Transactional -> 添加到事务
+ * 分类业务层接口实现类
+ *
  * @Author: weizujie
  * @Date: 2020/5/26
  * @Version: 1.0

@@ -1,6 +1,6 @@
 package com.weizujie.controller.admin;
 
-import com.weizujie.pojo.User;
+import com.weizujie.entity.User;
 import com.weizujie.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

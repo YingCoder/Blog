@@ -8,6 +8,7 @@
     <link rel="stylesheet" th:href="@{/css/typo.css}">
     <link rel="stylesheet" th:href="@{/css/animate.css}">
     <link rel="stylesheet" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" th:href="@{/lib/editormd/css/editormd.min.css}">
     <link rel="stylesheet" th:href="@{/lib/tocbot/tocbot.css}">
     <link rel="stylesheet" th:href="@{/css/me.css}">
 </head>
@@ -31,7 +32,7 @@
                 <div class="ui dropdown  item">
                     <div class="text">
                         <img class="ui avatar image" th:src="${session.loginUser.avatar}">
-                        韦祖杰
+                        <span th:text="${session.loginUser.username}"></span>
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
@@ -93,6 +94,7 @@
     <script th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script th:src="@{/lib/editormd/editormd.min.js}"></script>
 
 </th:block>
 </body>

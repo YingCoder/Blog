@@ -1,10 +1,12 @@
 package com.weizujie.service;
 
-import com.weizujie.pojo.Type;
+import com.weizujie.entity.Type;
 
 import java.util.List;
 
 /**
+ * 分类业务层接口
+ *
  * @Author: weizujie
  * @Date: 2020/5/26
  * @Version: 1.0

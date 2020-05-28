@@ -1,4 +1,4 @@
-package com.weizujie.pojo;
+package com.weizujie.entity;
 
 import lombok.Data;
 
@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * 用户实体类
+ *
  * @Author: weizujie
  * @Date: 2020/5/26
  * @Version: 1.0

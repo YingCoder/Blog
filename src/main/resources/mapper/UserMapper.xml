@@ -3,7 +3,7 @@
 <mapper namespace="com.weizujie.dao.UserMapper">
 
 
-    <select id="login" resultType="com.weizujie.pojo.User">
+    <select id="login" resultType="com.weizujie.entity.User">
         select * from t_user where username = #{username} and password = #{password}
     </select>
 </mapper>
